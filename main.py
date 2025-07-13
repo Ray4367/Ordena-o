@@ -30,8 +30,8 @@ linhas = arquivo.readlines()
 linhas1 = arquivo1.readlines()
 linhas2 = arquivo2.readlines()
 numeros = [int(linha.strip()) for linha in linhas]
-numeros = [int(linha.strip()) for linha in linhas1]
-numeros = [int(linha.strip()) for linha in linhas2]
+numeros1 = [int(linha.strip()) for linha in linhas1]
+numeros2 = [int(linha.strip()) for linha in linhas2]
 start_time = time.perf_counter()
 new_numeros = InsertionSort(numeros, len(numeros))
 end_time = time.perf_counter()
@@ -43,20 +43,20 @@ tempo_execucao2 = end_time2 - start_time2
 print("Tempo InsertionSort: ", tempo_execucao, "\n")
 print("Tempo SelectionSort: ", tempo_execucao2, "\n")
 start_time = time.perf_counter()
-new_numeros = InsertionSort(numeros1, len(numeros))
+new_numeros = InsertionSort(numeros1, len(numeros1))
 end_time = time.perf_counter()
 start_time2 = time.perf_counter()
-new_numeros2 = SelectionSort(numeros1, len(numeros))
+new_numeros2 = SelectionSort(numeros1, len(numeros1))
 end_time2 = time.perf_counter()
 tempo_execucao = end_time - start_time
 tempo_execucao2 = end_time2 - start_time2
 print("Tempo InsertionSort: ", tempo_execucao, "\n")
 print("Tempo SelectionSort: ", tempo_execucao2, "\n")
 start_time = time.perf_counter()
-new_numeros = InsertionSort(numeros2, len(numeros))
+new_numeros = InsertionSort(numeros2, len(numeros2))
 end_time = time.perf_counter()
 start_time2 = time.perf_counter()
-new_numeros2 = SelectionSort(numeros2, len(numeros))
+new_numeros2 = SelectionSort(numeros2, len(numeros2))
 end_time2 = time.perf_counter()
 tempo_execucao = end_time - start_time
 tempo_execucao2 = end_time2 - start_time2
